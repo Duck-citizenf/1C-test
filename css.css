@@ -1,5 +1,61 @@
-body {
-  background-color: red;
+@font-face {
+  font-family: Rosario;
+  src: url(fonts/Rosario.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/Roboto-Regular.ttf);
+}
+.center-body {
+  max-width: 1151px;
+  margin: 0px auto;
+}
+
+.footer {
+  background-color: #f4f4f4;
+}
+
+.header {
+  border-bottom: 2px #E8E8E8 solid;
+}
+
+.logo-text {
+  font-family: Rosario;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #E11C4B;
+  font-weight: 700;
+}
+
+.search-bar {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.75px;
+  border-radius: 100px;
+  border: 2px solid #dddddd;
+  width: 523px;
+  height: 46px;
+  padding-left: 50px;
+  background-image: url(img/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 18px;
+}
+
+.flex {
+  display: flex;
+}
+
+.vertical-center {
+  align-items: center;
+}
+
+.warp {
+  flex-wrap: wrap;
+}
+
+.gap-34 {
+  gap: 34px;
 }
 
 /*# sourceMappingURL=css.css.map */
