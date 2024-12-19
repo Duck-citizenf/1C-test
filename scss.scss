@@ -148,3 +148,17 @@ body{
     font-family: Roboto-Bold;
     font-size: 21px;
 }
+.moveright{
+    transform: translate(-1190px);
+    transition-duration: 200ms;
+    transition-property: all;
+}
+.moveleft{
+    transform: translate(0px);
+    transition-duration: 200ms;
+    transition-property: all;
+}
+.turn{
+    left: 0px;
+    transform: rotate(0.5turn);
+}
