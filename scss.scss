@@ -6,9 +6,21 @@
     font-family: Roboto;
     src: url(fonts/Roboto-Regular.ttf);
 }
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(fonts/Roboto-Bold.ttf);
+}
 .center-body{
     max-width: 1151px;
     margin: 0px auto;
+}
+body{
+    font-family: Roboto;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    margin: 0px;
 }
 .footer{
     background-color: #f4f4f4;
@@ -31,12 +43,17 @@
 
     border-radius: 100px;
     border: 2px solid #dddddd;
-    width: 523px;
+    width: 473px;
     height: 46px;
     padding-left: 50px;
     background-image: url(img/Search.svg);
     background-repeat: no-repeat;
     background-position: 18px;
+    margin-right: 25px;
+    margin-left: 12px;
+}
+.overflow-x{
+    overflow-x: hidden;
 }
 .flex{
     display: flex;
@@ -44,9 +61,79 @@
 .vertical-center{
     align-items: center;
 }
+.text-center{
+    text-align: center;
+}
 .warp{
     flex-wrap: wrap;
 }
+.space-between{
+    justify-content: space-between;
+}
+.gap-12{
+    gap: 12px;
+}
+.gap-24{
+    gap: 24px;
+}
 .gap-34{
     gap: 34px;
+}
+.gap-36{
+    gap: 36px;
+}
+.gap-62{
+    gap: 62px;
+}
+.lh-17{
+    line-height: 17px;
+}
+.lh-0{
+    line-height: 0px;
+}
+.mt-8{
+    margin-top: 8px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-96{
+    margin-bottom: 96px;
+}
+.pt-36{
+    padding-top: 36px;
+}
+.pt-18{
+    padding-bottom: 18px;
+}
+.mb-38{
+    margin-bottom: 38px;
+}
+.pr-6{
+    margin-right: 6px;
+}
+.Roboto-36{
+    font-family: Roboto-Bold;
+    font-size: 36px;
+    line-height: 42.19px;
+    
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+.copyright{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #8D8D8D;
+}
+.big-percent{
+    font-family: Roboto-Bold;
+}
+.menu{
+    div{
+        cursor: pointer;
+        &:hover{
+            color: #E11C4B;
+        }
+    }
 }
