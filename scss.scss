@@ -22,6 +22,16 @@ body{
     line-height: 18.75px;
     margin: 0px;
 }
+.relative{
+    position: relative;
+}
+.scroller{
+    right: 0px;
+    cursor: pointer;
+}
+.absolute{
+    position: absolute;
+}
 .footer{
     background-color: #f4f4f4;
 }
@@ -126,9 +136,6 @@ body{
     font-weight: 400;
     color: #8D8D8D;
 }
-.big-percent{
-    font-family: Roboto-Bold;
-}
 .menu{
     div{
         cursor: pointer;
@@ -136,4 +143,8 @@ body{
             color: #E11C4B;
         }
     }
+}
+.big-percent{
+    font-family: Roboto-Bold;
+    font-size: 21px;
 }

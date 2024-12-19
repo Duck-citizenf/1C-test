@@ -24,6 +24,19 @@ body {
   margin: 0px;
 }
 
+.relative {
+  position: relative;
+}
+
+.scroller {
+  right: 0px;
+  cursor: pointer;
+}
+
+.absolute {
+  position: absolute;
+}
+
 .footer {
   background-color: #f4f4f4;
 }
@@ -152,15 +165,16 @@ body {
   color: #8D8D8D;
 }
 
-.big-percent {
-  font-family: Roboto-Bold;
-}
-
 .menu div {
   cursor: pointer;
 }
 .menu div:hover {
   color: #E11C4B;
+}
+
+.big-percent {
+  font-family: Roboto-Bold;
+  font-size: 21px;
 }
 
 /*# sourceMappingURL=css.css.map */
