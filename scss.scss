@@ -13,6 +13,9 @@
 .center-body{
     max-width: 1151px;
     margin: 0px auto;
+    @media screen and (max-width: 768px) {
+        margin: 0px 20px;
+    }
 }
 body{
     font-family: Roboto;
@@ -34,6 +37,16 @@ body{
 }
 .footer{
     background-color: #f4f4f4;
+    @media screen and (max-width: 768px) {
+        .gap-62{
+            gap: 24px;
+        }
+        .row1{
+            flex-direction: column;
+            gap: 24px;
+            width: 328px;
+        }
+    }
 }
 .header{
     border-bottom: 2px #E8E8E8 solid;
@@ -161,4 +174,13 @@ body{
 .turn{
     left: 0px;
     transform: rotate(0.5turn);
+}
+.site-control{
+    .text-center {
+        div{
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+    }
 }
