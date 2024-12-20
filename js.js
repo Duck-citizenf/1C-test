@@ -14,3 +14,12 @@ function scroll(){
         state = 0
     }
 }
+
+document.querySelector('.header-menu').addEventListener('click', open);
+document.querySelector('.cross').addEventListener('click',close);
+function open(){
+    document.querySelector('.header-platform').classList.remove("hidden");
+}
+function close(){
+    document.querySelector('.header-platform').classList.add("hidden");
+}
