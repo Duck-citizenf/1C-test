@@ -274,18 +274,24 @@ body {
     margin: 0px auto;
   }
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 756px) {
+  .img-act {
+    max-width: 618px;
+    margin: 0px auto;
+  }
+}
+@media screen and (max-width: 618px) {
   .img-act {
     max-width: 300px;
     margin: 0px auto;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 778px) {
   .img-act img {
     width: 355px;
   }
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 766px) {
   .img-act img {
     width: 300px;
   }
