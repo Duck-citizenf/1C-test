@@ -13,8 +13,11 @@
 .center-body{
     max-width: 1151px;
     margin: 0px auto;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1133px) {
         margin: 0px 20px;
+    }
+    @media screen and (max-width: 680px) {
+        margin: 0px 10px;
     }
 }
 body{
@@ -50,6 +53,9 @@ body{
 }
 .header{
     border-bottom: 2px #E8E8E8 solid;
+    @media screen and (max-width: 680px) {
+        display: none;
+    }
 }
 .logo-text{
     font-family: Rosario;
@@ -72,8 +78,6 @@ body{
     background-image: url(img/Search.svg);
     background-repeat: no-repeat;
     background-position: 18px;
-    margin-right: 25px;
-    margin-left: 12px;
 }
 .overflow-x{
     overflow-x: hidden;
@@ -101,6 +105,9 @@ body{
 }
 .gap-34{
     gap: 34px;
+    @media screen and (max-width: 795px) {
+        gap: 18px;
+    }
 }
 .gap-36{
     gap: 36px;
@@ -133,7 +140,13 @@ body{
     margin-bottom: 38px;
 }
 .pr-6{
-    margin-right: 6px;
+    padding-right: 6px;
+}
+.mr-12{
+    margin-right: 12px;
+}
+.ml-25{
+    margin-left: 25px;
 }
 .Roboto-36{
     font-family: Roboto-Bold;
@@ -142,6 +155,13 @@ body{
     
     padding-top: 36px;
     padding-bottom: 36px;
+
+    @media screen and (max-width: 680px) {
+        font-size: 24px;
+        line-height: 28.13px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
 }
 .copyright{
     font-size: 14px;
@@ -177,10 +197,84 @@ body{
 }
 .site-control{
     .text-center {
-        div{
-            @media screen and (max-width: 768px) {
+        @media screen and (max-width: 891px) {
+            div{
                 display: none;
             }
+        }
+        @media screen and (max-width: 680px) {
+            img{
+                width: 24px;
+            }
+        }
+    }
+}
+.img-act{
+    @media screen and (max-width: 1133px) {
+        max-width: 756px;
+        margin: 0px auto;
+    }
+    @media screen and (max-width: 780px) {
+        max-width: 300px;
+        margin: 0px auto;
+    }
+    @media screen and (max-width: 768px) {
+        img{
+            width: 355px;
+        }
+    }
+    @media screen and (max-width: 680px) {
+        img{
+            width: 300px;
+        }
+    }
+}
+.mobile-between{
+    @media screen and (max-width: 680px) {
+        img{
+            width: 180px;
+        }
+    }
+}
+.mobile-visible{
+    display: none;
+    @media screen and (max-width: 680px) {
+        display: block;
+    }
+}
+.mobile-hidden{
+    @media screen and (max-width: 680px) {
+        display: none;
+    }
+}
+
+.grid-header{
+    @media screen and (max-width: 680px) {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: calc(100% - 120px) 120px;
+        grid-template-rows: 55.5px 38px;
+        img{
+            grid-column: 1;
+            grid-row: 1;
+        }
+        input{
+            grid-column: 1/3;
+            grid-row: 2;
+            font-size: 14px;
+            height: 32px;
+            width: calc(100% - 56px);
+        }
+        div{
+            grid-column: 2;
+            grid-row: 1;
+
+        }
+        .ml-25{
+            margin-left: 0;
+        }
+        .mr-12{
+            margin-right: 0;
         }
     }
 }
