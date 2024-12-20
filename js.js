@@ -1,19 +1,4 @@
-// document.querySelector('.scroller').addEventListener('click', scroll)
-// let state = 0;
-// function scroll(){
-//     if (state == 0){
-//         document.querySelector('.menu').classList.add("moveright");
-//         document.querySelector('.menu').classList.remove("moveleft");
-//         document.querySelector('.scroller').classList.add("turn");
-//         state = 1
-//     }
-//     else{
-//         document.querySelector('.menu').classList.remove("moveright");
-//         document.querySelector('.menu').classList.add("moveleft");
-//         document.querySelector('.scroller').classList.remove("turn");
-//         state = 0
-//     }
-// }
+
 
 document.querySelector('.header-menu').addEventListener('click', open);
 document.querySelector('.cross').addEventListener('click',close);
@@ -60,26 +45,10 @@ if (N!=null){
 _C.style.setProperty('--n', N);
 }
 
-window.addEventListener("resize", mobile);
-function mobile(){
-//   if (screen.width > 767){
-//     document.querySelector('.container').removeEventListener('mousedown', lock, false);
-//     document.querySelector('.container').removeEventListener('touchstart', lock, false);
-//     document.querySelector('.container').removeEventListener('mousemove', drag, false);
-//     document.querySelector('.container').removeEventListener('touchmove', drag, false);
-//     document.querySelector('.container').removeEventListener('mouseup', move, false);
-//     document.querySelector('.container').removeEventListener('touchend', move, false);
-//     document.querySelector('.container').classList = "flex gap-36 space-between menu container"
-//     document.querySelector('.container').style = ""
-//   }
-//   else{
-    _C.addEventListener('resize', size, false);
-    _C.addEventListener('mousedown', lock, false);
-    _C.addEventListener('touchstart', lock, false);
-    _C.addEventListener('mousemove', drag, false);
-    _C.addEventListener('touchmove', drag, false);
-    _C.addEventListener('mouseup', move, false);
-    _C.addEventListener('touchend', move, false);
-  }
-// }
-mobile();
+_C.addEventListener('resize', size, false);
+_C.addEventListener('mousedown', lock, false);
+_C.addEventListener('touchstart', lock, false);
+_C.addEventListener('mousemove', drag, false);
+_C.addEventListener('touchmove', drag, false);
+_C.addEventListener('mouseup', move, false);
+_C.addEventListener('touchend', move, false);
