@@ -33,6 +33,7 @@ body{
 }
 .scroller{
     right: 0px;
+    top: 0px;
     cursor: pointer;
     @media screen and (max-width: 768px) {
         display: none;
@@ -380,4 +381,16 @@ body{
     position: absolute;
     right: 10px;
     top: 18px;
+}
+.container{
+    display: flex;
+    overflow: hidden;
+    transform: translate(calc(var(--i, 0)/var(--n)*-100% + var(--tx, 0px)));
+    position: relative;
+    width: 1400px;
+}
+.mobile-noflex{
+    @media screen and (max-width: 768px) {
+        display: initial;
+    }
 }
